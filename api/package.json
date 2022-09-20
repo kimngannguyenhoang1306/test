@@ -3,7 +3,8 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "start": "nodemon ./bin/www"
+    "start": "nodemon ./bin/www",
+    "test": "jest  --forceExit"
   },
   "dependencies": {
     "cookie-parser": "~1.4.4",
@@ -16,5 +17,12 @@
     "mongoose": "^6.6.1",
     "morgan": "~1.9.1",
     "validator": "^13.7.0"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "jest": "^29.0.3",
+    "superagent": "^8.0.0",
+    "supertest": "^6.2.4"
   }
 }
